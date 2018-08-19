@@ -12,6 +12,7 @@
 
 <script>
 import db from './firebaseInit';
+//   db.firestore.settings({ timestampsInSnapshots: true });
 export default{
     name: 'dashboard',
     data(){
@@ -23,7 +24,7 @@ export default{
         db.collection('employees').get().then
         (querySnapshot =>{
             querySnapshot.forEach(doc=>{
-                console.log(doc.data);
+                console.log(doc.data());
                 const data = {
 
                 }
