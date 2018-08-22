@@ -12,7 +12,7 @@ v-bind:key="employee.id" class="collection-item">
 </li>
 </ul>
 <div class="fixed-action-btn">
-<router-link to="/new" >
+<router-link to="/new" class="btn-floating btn-large red">
 <i class="fa fa-plus"></i>
 </router-link>
 </div>
