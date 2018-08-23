@@ -9,6 +9,9 @@
 </template>
 
 <script>
+//19:42min
+//Add authentication
+
 import Navbar from './components/Navbar';
 export default {
   name: 'App',
