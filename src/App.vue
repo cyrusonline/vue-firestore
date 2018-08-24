@@ -9,7 +9,7 @@
 </template>
 
 <script>
-//19:42min
+//39:07min
 //Add authentication
 
 import Navbar from './components/Navbar';

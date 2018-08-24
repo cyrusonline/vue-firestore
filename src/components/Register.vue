@@ -39,7 +39,17 @@ export default{
     methods:{
       register(e){
         console.log('register');
-
+        firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
+        .then(user=>{
+          console.log(user)
+          alert(`Account created for ${user.user.email}`)
+          this.$router.push('/');
+        },
+        err=>{
+          alert(err.message);
+        }
+        
+        )
         e.preventDefault();
         
       }
