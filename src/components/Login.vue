@@ -42,7 +42,7 @@ export default{
         .then(user=>{
           console.log(user)
           alert(`You are login as ${user.user.email}`)
-          this.$router.push('/');
+          this.$router.go();
         },
         err=>{
           alert(err.message);
